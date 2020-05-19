@@ -1,4 +1,4 @@
-This code can be used to generate an R dataframe containing a variety of information on US counties (FIPS areas) from various US governmental agencies, including the following: 
+This code can be used to generate an R dataframe containing a variety of information on US counties (FIPS areas) from various US governemntal agencies, including the following: 
 
 * population (US census) 
 * migration (US census) 
