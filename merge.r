@@ -22,21 +22,22 @@ for(i in seq(2,length(dframes),length=length(dframes)-1) ){
 
 ## Save 
 
-saveRDS(usc,file="USCountiesData.rds") 
+saveRDS(usc,file="UScounties.rds") 
 
-write.csv(usc,file="USCountiesData.csv",row.names=FALSE) 
+write.csv(usc,file="UScounties.csv",row.names=FALSE) 
 
 
 ## Demo
-plot(usc$longitude,usc$latitude,ylim=c(23,50),xlim=c(-125,-65)) 
+if(FALSE){ 
+  plot(usc$longitude,usc$latitude,ylim=c(23,50),xlim=c(-125,-65)) 
 
 
-cex<-( usc$medianIncome-min(usc$medianIncome) )/
-     ( max(usc$medianIncome) -min(usc$medianIncome) )
+  cex<-( usc$medianIncome-min(usc$medianIncome) )/
+       ( max(usc$medianIncome) -min(usc$medianIncome) )
 
-plot(usc$longitude,
-     usc$latitude,cex=cex,
-     ylim=c(23,50),xlim=c(-125,-65))
-
+  plot(usc$longitude,
+       usc$latitude,cex=cex,
+       ylim=c(23,50),xlim=c(-125,-65))
+}
 
 
