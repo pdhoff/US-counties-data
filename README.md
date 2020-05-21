@@ -1,4 +1,4 @@
-This code can be used to generate an R dataframe containing a variety of information on US counties (FIPS areas) from various US governmental agencies, including the following: 
+This code generates a dataset containing a variety of information on US counties (FIPS areas) from various US governmental agencies, including the following: 
 
 * population (US census) 
 * migration (US census) 
@@ -7,9 +7,8 @@ This code can be used to generate an R dataframe containing a variety of informa
 * land area (US census) 
 * socioeconomic status (USDA) 
 
-Sadly, information on these variables requires merging several different datasets. 
-
-To generate the dataframe file `USCountiesData.rds`, source the `merge.r` file in an R session. This will source several `USCxxx.r` files, each one of which loads a different raw dataset and creates a dataframe. Then the code loads the dataframes, merges them and saves the result. 
+Information on these variables requires merging several different datasets. 
+To generate the data files `UScounties.rds` and `UScounties.csv`,  source the `merge.r` file in an R session. This will source several `USCxxx.r` files, each one of which loads a different raw dataset and creates a dataframe. Then the code loads the dataframes, merges them and saves the result to the working directory. 
 
 
 
